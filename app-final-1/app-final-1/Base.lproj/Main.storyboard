@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5dD-8e-8Wp">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--WelcomeViewController-->
+        <scene sceneID="wqU-9U-YV2">
+            <objects>
+                <viewController storyboardIdentifier="WelcomeViewController" title="WelcomeViewController" interactionActivityTrackingBaseName="WelcomeViewController" modalPresentationStyle="fullScreen" id="5dD-8e-8Wp" customClass="WelcomeViewController" customModule="app_final_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qra-cs-ysL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Sejam bem-vindo(a)!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FcD-33-Dhx">
+                                <rect key="frame" x="116" y="355" width="160" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hV8-5D-QdZ" userLabel="showMainScreenSegue">
+                                <rect key="frame" x="107.5" y="399" width="199" height="35"/>
+                                <accessibility key="accessibilityConfiguration" hint="showMainScreenSegue" identifier="showMainScreenSegue" label="showMainScreenSegue"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Toque para continuar..."/>
+                                <attributedString key="userComments">
+                                    <fragment content="showMainScreenSegue"/>
+                                </attributedString>
+                                <connections>
+                                    <action selector="showMainScreenSegue:" destination="5dD-8e-8Wp" eventType="touchUpInside" id="zvR-DK-aL9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Afi-HP-vcs"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="FcD-33-Dhx" firstAttribute="centerX" secondItem="qra-cs-ysL" secondAttribute="centerX" id="83C-wB-3YM"/>
+                            <constraint firstItem="FcD-33-Dhx" firstAttribute="top" secondItem="Afi-HP-vcs" secondAttribute="top" constant="296" id="YDA-tS-Kgw"/>
+                            <constraint firstItem="FcD-33-Dhx" firstAttribute="centerX" secondItem="hV8-5D-QdZ" secondAttribute="centerX" id="aLw-si-Gmm"/>
+                            <constraint firstItem="FcD-33-Dhx" firstAttribute="leading" secondItem="Afi-HP-vcs" secondAttribute="leading" constant="116" id="jZL-Sr-vjj"/>
+                            <constraint firstItem="hV8-5D-QdZ" firstAttribute="top" secondItem="FcD-33-Dhx" secondAttribute="bottom" constant="34" id="vmh-St-0hK"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xrh-EI-kTo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1263.3587786259541" y="-27.464788732394368"/>
+        </scene>
+        <!--MainScreenViewController-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="MainScreenViewController" title="MainScreenViewController" interactionActivityTrackingBaseName="MainScreenViewController" modalPresentationStyle="fullScreen" id="BYZ-38-t0r" userLabel="MainScreenViewController" customClass="MainScreenViewController" customModule="app_final_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cq4-HX-lFX">
+                                <rect key="frame" x="146" y="409" width="100" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" hint="convertButton" identifier="convertButton" label="convertButton"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Converter"/>
+                                <attributedString key="userComments">
+                                    <fragment content="convertButton"/>
+                                </attributedString>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Real (BRL)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WRf-nU-qZs">
+                                <rect key="frame" x="156" y="290" width="80" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" hint="currencyFromLabel" identifier="currencyFromLabel" label="currencyFromLabel"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <attributedString key="userComments">
+                                    <fragment content="currencyFromLabel"/>
+                                </attributedString>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="T3p-ae-SEp" userLabel="amountTextField">
+                                <rect key="frame" x="148" y="320" width="97" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" hint="amountTextField" identifier="amountTextField" label="amountTextField"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <attributedString key="userComments">
+                                    <fragment content="amountTextField"/>
+                                </attributedString>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="LPF-PJ-aW6"/>
+                    <attributedString key="userComments">
+                        <fragment content="MainScreenViewController"/>
+                    </attributedString>
+                    <connections>
+                        <outlet property="amountTextField" destination="T3p-ae-SEp" id="15V-7p-AGU"/>
+                        <outlet property="convertButton" destination="Cq4-HX-lFX" id="PDz-ag-9Z3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-483" y="-27"/>
+        </scene>
+        <!--ResultViewController-->
+        <scene sceneID="ZSI-MM-Z4m">
+            <objects>
+                <viewController storyboardIdentifier="ResultViewController" title="ResultViewController" interactionActivityTrackingBaseName="ResultViewController" modalPresentationStyle="fullScreen" id="PYI-yZ-N0G" userLabel="ResultViewController" customClass="ResultViewController" customModule="app_final_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fIf-E6-e0e">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Resultado" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sz7-wX-lOY" userLabel="resultLabel">
+                                <rect key="frame" x="71" y="375" width="251" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" hint="resultLabel" identifier="resultLabel" label="resultLabel"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" name="AccentColor"/>
+                                <nil key="highlightedColor"/>
+                                <attributedString key="userComments">
+                                    <fragment content="resultLabel"/>
+                                </attributedString>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IU3-ki-UTs" userLabel="backButton">
+                                <rect key="frame" x="162" y="442" width="69" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" hint="backButton" identifier="backButton" label="backButton"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Voltar"/>
+                                <attributedString key="userComments">
+                                    <fragment content="backButton"/>
+                                </attributedString>
+                                <connections>
+                                    <action selector="backButtonTapped:" destination="PYI-yZ-N0G" eventType="touchUpInside" id="RA5-8i-1kR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="zAD-M9-NZp"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="8cA-dB-9QT"/>
+                    <attributedString key="userComments">
+                        <fragment content="ResultViewController"/>
+                    </attributedString>
+                    <connections>
+                        <outlet property="backButton" destination="IU3-ki-UTs" id="ul5-ea-G2u"/>
+                        <outlet property="resultLabel" destination="Sz7-wX-lOY" id="pwY-66-hkH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Law-gy-Ewy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="287.78625954198475" y="-27.464788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

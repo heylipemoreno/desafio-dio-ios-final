@@ -1,0 +1,10 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '14.0'
+
+target 'app-final-3' do
+  use_frameworks!
+
+  # Add your dependencies here
+  pod 'Alamofire', '~> 5.4'
+
+end
